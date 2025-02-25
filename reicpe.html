@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recipes">
+            <h2>Our Recipes</h2>
+            <div class="recipe-grid">
+                <div class="recipe-card" onclick="openModal('recipe1')">
+                    <img src="img/chicken 2.jpg" alt="Recipe 1">
+                    <h3>butter chicken</h3>
+                </div>
+                <div class="recipe-card" onclick="openModal('recipe2')">
+                    <img src="img/gj3.jpg" alt="Recipe 2">
+                    <h3>Gulab jamun</h3>
+                </div>
+                <div class="recipe-card" onclick="openModal('recipe3')">
+                    <img src="img/dahi wada 2.webp" alt="Recipe 3">
+                    <h3>Dahi wada </h3>
+                </div>
+                <div class="recipe-card" onclick="openModal('recipe4')">
+                    <img src="img/cake.jpg" alt="Recipe 4">
+                    <h3>Chocolate Cake</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Delicious Recipes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
